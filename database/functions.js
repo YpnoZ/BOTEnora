@@ -10,10 +10,11 @@ module.exports = async(client) => {
 
     client.getGuild = async guild => {
         const data = await Guild.findOneAndUpdate({ guildID: guild.id });
-        if (data != null) {
+        if (!data) {
             return data;
         }
         return client.config.defaultSettings;
+
     };
 
     client.updateGuild = async(guild, settings) => {
@@ -35,11 +36,11 @@ module.exports = async(client) => {
 
     client.getUser = async user => {
         const data = await User.findOneAndUpdate({ userID: user.id });
-        if (data != null) {
+        if (!data) {
             return data;
-        } else {
-            return;
         }
+        return;
+
     };
 
     client.updateUser = async(user, settings) => {
