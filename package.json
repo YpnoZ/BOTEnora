@@ -1,0 +1,19 @@
+{
+    "name": "enorajs",
+    "version": "0.1.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "discord-giveaways": "^4.2.1",
+        "discord.js": "^12.5.1",
+        "luxon": "^1.25.0",
+        "moment": "^2.29.1",
+        "mongoose": "^5.11.1",
+        "ms": "^2.1.2"
+    }
+}
